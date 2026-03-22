@@ -13,16 +13,16 @@
         }
         h1 { color: white; }
         h2 { color: #aaaaaa; }
-        iframe {
-            width: 100%;
-            height: 750px;
-            border: none;
-        }
     </style>
 </head>
 <body>
     <h1>Seattle Storm — Lineup Analysis</h1>
-    <h2>Offensive vs Defensive Identity (2000–2024)</h2>
-    <iframe src="storm_identity_interactive.html"></iframe>
+    <h2>Offensive vs Defensive Identity (2000–2025)</h2>
+    <iframe src="storm_identity_interactive.html" 
+            width="100%" 
+            height="800px"
+            style="border:none; display:block;"
+            onload="this.style.height=(this.contentWindow.document.body.scrollHeight+50)+'px'">
+    </iframe>
 </body>
 </html>
